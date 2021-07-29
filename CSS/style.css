@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #f1a68a, #f8916b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transparent{
+    background: white;
+    height: 80vh;
+    width: 65%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25));
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.75), rgba(255, 255, 255, 0.25));
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.other{
+    margin: 2rem 0;
+}
+.icon{
+    margin: 2rem 0;
+    display: flex;
+}
+i{
+    color: #f8916b;
+    margin-right: 10px;
+}
+.profile{
+    margin: 2rem 0;
+}
+
+.right-side{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.cards img{
+    height: 30px;
+    margin-top: 10px;
+    background: #f5ccbb;
+    border-radius: 5px;
+}
+
+.cards{
+    background: linear-gradient(to right top, rgb(255,255,255), rgba(255, 255, 255, 0.45));
+    margin: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 22px rgba(175, 171, 171, 0.4);
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+small{
+    margin-top: 7px;
+}
+.rate{
+    font-weight: bold;
+}
+
+progress{
+    border-radius: 7px;
+    width: 100%;
+    height: 14px;
+    margin-top: 10px;
+}
+progress::-webkit-progress-bar{
+    background: rgb(236, 198, 185);
+    border-radius: 10px;
+}
+progress::-webkit-progress-value{
+    background: #f8916b;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.low{
+    width: 100px;
+    height: 100px;
+    background-color: #f8916b;
+    margin: 40px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.high{
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px;
+    background-color: bisque;
+    z-index: 2;
+    position: relative;
+    
+}

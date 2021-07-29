@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+section{
+    min-height:100vh;
+    background: linear-gradient(to right top, #f1a68a, #f8916b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent{
+    background: white;
+    height: 80vh;
+    width: 65%;
+    /* We need this to be centered, let's use flex, then set justify-content and align-items to center; */
+    /* Let's give this a transparent background, we will use rgba, let's set the first color to white and give it 0.75 opacity then the second to white again, this time, let opacity be 0.25*/
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.75), rgba(255,255,255,0.25));
+    /* Let's give it a border */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex ;
+}
+/* now to the second part of the dashboard, let's go to html. now let's share the dashboard in 2 parts using grid. we are going to add the display type of grid to the transparent div which is the parent div and so the flex container. */
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.75), rgba(255,255,255,0.25));
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.other{
+    margin: 2rem 0;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;  
+}
+/* We are going to use icons from fontawesome, here is how to, copy and paste the cdn in the head of your html file and then come here(show on the website),  copy and paste html of the free ones, because I am not using the pro version. t */
+/* Then search for the icon you want, copy and paste the html. You can style it as you want. I'll give mine this color to match my design */
+i{
+    color:#f8916b ;
+    margin-right: 10px ;
+}
+
+.profile{
+    margin: 2rem 0;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    flex: 2;
+   
+}
+.cards-main{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background: linear-gradient(to right top, rgb(255,255,255),rgba(255,255,255,0.45));
+    border-radius: 0.5rem;
+    margin: 10px;
+    box-shadow: 4px 4px 22px rgba(175, 171, 171, 0.4);
+    
+}
+.cards img{
+    height: 30px;
+    margin-top: 10px;
+    background: #f5ccbb;
+    border-radius: 5px;
+}
+.details{
+    display: flex;
+    flex-direction: column;  
+}
+small{
+    margin-top: 5px;
+}
+.rate{
+    font-weight: bold;
+}
+progress {
+    border-radius: 7px; 
+    width: 100%;
+    height: 14px;  
+    margin-top: 10px; 
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgb(236, 198, 185);
+    border-radius: 10px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #f8916b;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+  }
+  
